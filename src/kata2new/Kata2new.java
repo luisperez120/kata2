@@ -21,7 +21,8 @@ public class Kata2new {
          Map <Integer, Integer> mapa = new HashMap <>();
          int [] data = {1,2,3,4,1,2,3,5,1,2};
          
-         for (int i = 0; data.length > i; i++) {
+         for (int i : data) {
+            
             if(!mapa.containsKey(data[i])){
                 mapa.put(data[i], 1);
             } else {
